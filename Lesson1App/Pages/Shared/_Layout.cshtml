@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lesson1App</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/library.css" />
+    <!-- Bootstrap v4.4.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap v4.4.1 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" data-auto-a11y="true"></script>
+
+    <!-- Requirement: Use SCSS -->
+</head>
+<body class="low-stack">
+    <header class="top-stack">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">.NET Web Development 2020</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#links" aria-controls="links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="links">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pages/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/future.html">Future Goals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/future.html">Favorite Tech</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="pos-r t-56-pix l-0-pix h-500-pix w-75-percent">
+        @RenderBody()
+    </main>
+    <footer class="navbar-dark bg-dark top-stack pos-f b-0-pix l-0-pix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <a href="#">Need a web presence?</a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    Samuel Kaiser
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <a href="https://www.linkedin.com/in/sam-kaiser-70757b155/" target="_blank"><span class="fab fa-linkedin"></span></a>
+                    <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
+                    <a href="#" target="_blank"><span class="fab fa-github"></span></a>
+                    <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+                    <a href="#" target="_blank"><span class="fab fa-snapchat"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
