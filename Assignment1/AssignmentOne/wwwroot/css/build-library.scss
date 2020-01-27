@@ -1,0 +1,138 @@
+// set pixel property value
+@function pixelValue($i){
+    @return #{$i+"px"};
+}
+
+// set percent property value
+@function percentValue($i){
+    @return #{$i+"%"};
+}
+
+$i: 0;
+@while $i <= 500{
+    .mt-#{$i}-pix{
+        margin-top: pixelValue($i);
+    }
+    .mb-#{$i}-pix{
+        margin-bottom: pixelValue($i);
+    }
+    .mr-#{$i}-pix{
+        margin-right: pixelValue($i);
+    }
+    .ml-#{$i}-pix{
+        margin-left: pixelValue($i);
+    }
+    $i: $i+5;
+}
+
+@for $i from 1 through 100{
+    .mt-#{$i}-percent{
+        margin-top: percentValue($i);
+    }
+    .mb-#{$i}-percent{
+        margin-bottom: percentValue($i);
+    }
+    .mr-#{$i}-percent{
+        margin-right: percentValue($i);
+    }
+    .mt-#{$i}-percent{
+        margin-left: percentValue($i);
+    }
+}
+
+$i: 0;
+@while $i <= 500{
+    .pt-#{$i}-pix{
+        padding-top: pixelValue($i);
+    }
+    .pb-#{$i}-pix{
+        padding-bottom: pixelValue($i);
+    }
+    .pr-#{$i}-pix{
+        padding-right: pixelValue($i);
+    }
+    .pl-#{$i}-pix{
+        padding-left: pixelValue($i);
+    }
+    $i: $i+5;
+}
+
+@for $i from 1 through 100{
+    .pt-#{$i}-percent{
+        padding-top: percentValue($i);
+    }
+    .pb-#{$i}-percent{
+        padding-bottom: percentValue($i);
+    }
+    .pr-#{$i}-percent{
+        padding-right: percentValue($i);
+    }
+    .pl-#{$i}-percent{
+        padding-left: percentValue($i);
+    }
+}
+
+$i: 0;
+@while $i <= 500{
+    .w-#{$i}-pix{
+        width: pixelValue($i);
+    }
+    $i: $i+5;
+}
+
+@for $i from 0 through 100{
+    .w-#{$i}-percent{
+        width: percentValue($i);
+    }
+}
+
+@for $i from 0 through 500{
+    .h-#{$i}-pix{
+        height: pixelValue($i);
+    }
+    $i: $i+5;
+}
+
+@for $i from 0 through 100{
+    .h-#{$i}-percent{
+        height: percentValue($i);
+    }
+}
+
+$positions: [fixed relative absolute];
+
+@each $type in $positions{
+    .pos-#{str-slice($type, 0, 1)}{
+        position: $type;
+    }
+}
+
+@for $i from 0 through 250{
+    .t-#{$i}-pix{
+        top: pixelValue($i);
+    }
+    .b-#{$i}-pix{
+        bottom: pixelValue($i);
+    }
+    .r-#{$i}-pix{
+        right: pixelValue($i);
+    }
+    .l-#{$i}-pix{
+        left: pixelValue($i);
+    }
+}
+
+@for $i from 1 through 100{
+    .t-#{$i}-percent{
+        top: percentValue($i);
+    }
+    .b-#{$i}-percent{
+        bottom: percentValue($i);
+    }
+    .r-#{$i}-percent{
+        right: percentValue($i);
+    }
+    .l-#{$i}-percent{
+        left: percentValue($i);
+    }
+}
